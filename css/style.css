@@ -135,16 +135,14 @@ nav{
 
 main{
   width: 100vw;
-  display: flex;
+  /* display: flex; */
   /* border: 1px solid #fafafafa; */
   /* margin: 0px 80px; */
   margin-top: 50px;
-  justify-content: center;
-  align-items: center;
 }
 
 .center{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
