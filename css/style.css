@@ -605,6 +605,16 @@ h1{
     margin: 100px;
   }
 }
+@media screen and (max-width:550px){
+  .skills__container{
+    gap: 40px;
+    margin: 175px 74px;
+  }
+  .contact__stack{
+    margin: 90px;
+    gap: 30px;
+  }
+}
 @media screen and (max-width:480px ) {
   .logo a{
     font-size: 1em;
