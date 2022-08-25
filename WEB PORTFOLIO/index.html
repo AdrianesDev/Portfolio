@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f2c86cc876.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Adrian Castañeda</title>
+</head>
+  <body>
+    <header class="wrapper">
+      <span class="logo"><a href="">Adrian Castañeda Rodriguez</a></span>
+      <div class="back__menu" id="back_menu"></div>
+      <nav id="nav">
+        <i class="btn__close fa-solid fa-xmark" id="close"></i>
+        <ul class="nav-list">
+          <!-- <li class="list-links"><a href="#aboutme">About me</a></li> -->
+          <li class="list-links"><a href="#projects">Projects</a></li>
+          <li class="list-links"><a href="#skills">Skills</a></li>
+          <li class="list-links"><a href="#contactme">Contact me</a></li>
+        </ul>
+        
+        <div class="boton">
+          <input type="checkbox" name="" id="btn-switch">
+          <label for="btn-switch" class="lbl-switch"></label>
+        </div>
+      </nav>
+      
+      
+      <i class="nav__hamburger fa-solid fa-bars" id="btn-menu"></i>
+    </header>
+    <main id="aboutme">
+      <div class="center">
+        <div class="container__main">
+          <div><img class="logo__image" src="./img/IMG_5736_Original.jpg" alt=""></div>
+          <div class="logo__css"><img class="contain__logo" src="./img/css-logo.png" alt=""></div>
+          <div class="logo__js"><img class="contain__logo" src="./img/js-logo.png" alt=""></div>
+          <div class="logo__html"><img class="contain__logo" src="./img/html5-logo.png" alt=""></div>
+          <div class="logo__figma"><img class="contain__logo" src="./img/figma-logo.png" alt=""></div>
+      </div>
+      <div class="about-me">
+        <h1>Front-end developer</h1>
+        <p>Ing. en desarrollo de software con especialidad en desarrollo web del lado del front-end con experiencia en tecnologías como JavaScript, Html, Css y React .</p>
+      </div>
+        <a class="button__cv"  download="CV Adrian Castañeda" href="./CV/CV Adrian Castañeda Rodriguez.pdf">
+          <i class=" button__icon fa-solid fa-file-arrow-down"></i>download my CV
+          <span></span>
+        </a>
+      </div>
+        
+      
+    </main>
+    <section class="projects" id="projects">
+      <H2 class="projects__title">Projects</H2>
+      <div class="projects__container">
+            <div class="projects__card">
+              <div class="card__img"><img src="./img/Spotifu.png" alt="Spotifu project"></div>
+                <div class="card__content">
+                  <h3 class="card__title">Title: Spotifu</h3>
+                  <p class="card__text">Replica de spotify, con la finalidad de aprender la propiedad de flexbox y la creacion de componentes. </p>
+                  <div class="button__content">
+                    <a class="button__card selected" href="https://adrianesdev.github.io/Spotifu/" target="_blank">
+                      <i class=" button__icon selected fa-solid fa-arrow-up-right-from-square"></i>visit site
+                    </a>
+                    <a class="button__card" href="https://github.com/AdrianesDev/Spotifu" target="_blank">
+                      <i class="button__icon  fa-brands fa-github"></i>github
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="projects__card">
+              <div class="card__img"><img src="./img/weather-app.png" alt="Aplicacion del tiempo"></div>
+                <div class="card__content">
+                  <h3 class="card__title">Title: weather-app</h3>
+                  <p class="card__text">Integracion de una API con fetch, manejo de informacion JSON. </p>
+                  <div class="button__content">
+                    <a class="button__card selected" href="https://weather-app-ruddy-three.vercel.app/" target="_blank">
+                      <i class=" button__icon selected fa-solid fa-arrow-up-right-from-square"></i>visit site
+                    </a>
+                    <a class="button__card" href="https://github.com/AdrianesDev/weather-app" target="_blank">
+                      <i class="button__icon  fa-brands fa-github"></i>github
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="projects__card">
+              <div class="card__img"><img src="./img/Curso-html-css.png" alt="introduccion a la web"></div>
+                <div class="card__content">
+                  <h3 class="card__title">Title: HTML y CSS3</h3>
+                  <p class="card__text">Creacion de una pagina estatica, con informacion sobre como iniciar en HTML y CSS.</p>
+                  <div class="button__content">
+                    <a class="button__card selected" href="https://adrianesdev.github.io/curso-escencial-html-css/" target="_blank">
+                      <i class=" button__icon selected fa-solid fa-arrow-up-right-from-square"></i>visit site
+                    </a>
+                    <a class="button__card" href="https://github.com/AdrianesDev/curso-escencial-html-css" target="_blank">
+                      <i class="button__icon  fa-brands fa-github"></i>github
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="projects__card">
+              <div class="card__img"><img src="./img/Video-player.png" alt="Video-player"></div>
+                <div class="card__content">
+                  <h3 class="card__title">tite: Video player</h3>
+                  <p class="card__text">manejo de DOM con JS, haciendo funcionar un reproductor de video, con sus propios botones</p>
+                  <div class="button__content">
+                    <a class="button__card selected" href="https://adrianesdev.github.io/video-player/" aria-label="reproductor">
+                      <i class=" button__icon selected fa-solid fa-arrow-up-right-from-square"></i>visit site
+                    </a>
+                    <a class="button__card" href="https://github.com/AdrianesDev/video-player" target="_blank">
+                      <i class="button__icon  fa-brands fa-github"></i>github
+                    </a>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="projects__title skill__title">Skills</h2>
+        <div class="skills__container">
+          <i class="skills__icon fa-brands fa-figma"></i>
+          <i class="skills__icon fa-brands fa-html5"></i>
+          <i class="skills__icon fa-brands fa-css3-alt"></i>
+          <i class="skills__icon fa-brands fa-js"></i>
+        </div>
+    </section>
+    <section class="contact-me" id="contactme">
+      <h2 class="projects__title skill__title">Contact me</h2>
+      <div class="contact__stack">
+        <a class="contact__icon" href="https://www.linkedin.com/in/adrian-casta%C3%B1eda-51926b1a4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="contact__icon" href="https://github.com/AdrianesDev" target="_blank"><i class="fa-brands fa-github" ></i></a>
+        <a class="contact__icon" href="https://twitter.com/AdrianesDev" target="_blank"><i class="fa-brands fa-twitter" ></i></a>
+        <a class="contact__icon" href="https://www.instagram.com/adriianess/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
