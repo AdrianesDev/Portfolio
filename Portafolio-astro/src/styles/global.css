@@ -1,0 +1,12 @@
+@import "tailwindcss";
+/* @import "tailwindcss/preflight"; */
+@import "tailwindcss/utilities";
+@import "./components.css";
+
+@theme {
+  --color-primary: #223237;
+  --color-secondary: #18121e;
+  --color-warmYellow: #eac67a;
+  --color-rust: #984b41;
+  --color-white: #fffffe;
+}

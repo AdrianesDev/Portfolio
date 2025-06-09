@@ -1,0 +1,214 @@
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animación float */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Animacion Nav */
+/* Efecto hover links en nav */
+.list-links a {
+  color: var(--warmYellow);
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.list-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--warmYellow);
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.list-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Base logos */
+.logo__css,
+.logo__js,
+.logo__html,
+.logo__figma {
+  display: flex;
+  width: 104px;
+  height: 104px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 24px 19px 21px -21px rgba(0, 0, 0, 0.27);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  animation: float 2.5s infinite;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+}
+
+/* Posiciones desktop */
+.logo__css {
+  top: -40px;
+  left: 0;
+}
+
+.logo__figma {
+  top: -20px;
+  right: 0;
+}
+
+.logo__html {
+  bottom: -10px;
+  left: 0;
+}
+
+.logo__js {
+  bottom: -20px;
+  right: 0;
+}
+
+/* Logo interior */
+.contain__logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Boton de CV */
+.button__cv span {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  border-radius: 100%;
+  background: #eac67a; /* warm-Yellow */
+  top: -88%;
+  left: -101%;
+  transition: all 700ms;
+  z-index: -1;
+}
+
+.button__cv:hover span {
+  left: -7px;
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 390px) {
+  .logo__css,
+  .logo__figma,
+  .logo__html,
+  .logo__js {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo__figma,
+  .logo__js {
+    right: -45px;
+  }
+
+  .logo__css,
+  .logo__html {
+    right: 164px;
+  }
+
+  .contain__logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #nav {
+    gap: 43px;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    background-color: #eac67a; /* warm-Yellow */
+    height: 100vh;
+    width: 500px;
+    top: 0;
+    right: -500px;
+    position: fixed;
+    z-index: 99;
+    padding: 60px;
+    transition: all 300ms ease-in;
+  }
+
+  .btn__close {
+    position: fixed;
+    display: none;
+  }
+
+  .back__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 99;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin: 70px;
+    gap: 70px;
+  }
+
+  .nav-list a {
+    color: #984b41; /* rust */
+    font-size: 2em;
+  }
+
+  .boton {
+    margin-left: 70px;
+  }
+
+  .nav__hamburger {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1021px) {
+  #btn-menu,
+  #close {
+    display: none !important;
+  }
+
+  #nav {
+    all: unset;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 43px;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 43px;
+    margin: 0;
+  }
+
+  .back__menu {
+    display: none !important;
+  }
+}

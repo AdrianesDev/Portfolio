@@ -1,0 +1,25 @@
+---
+// Importa Tailwind CSS global
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f2c86cc876.js"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adrian Castañeda</title>
+  </head>
+  <body class="bg-primary font-sans text-white">
+    <slot />
+    <script src="/index.js" is:inline></script>
+  </body>
+</html>
